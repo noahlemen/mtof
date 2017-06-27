@@ -9,5 +9,5 @@ module.exports = function mtof(midiNote, concertPitch) {
     throw new TypeError("'mtof' expects its second argument to be a number.")
   }
 
-  return 2 ^ ((midiNote - 69) / 12 * concertPitch);
+  return 2 ^ ((midiNote - 69) / 12) * concertPitch;
 }
